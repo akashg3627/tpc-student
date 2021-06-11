@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+.muted {
+	opacity: 0.6;
+}
+
+.jobCard {
+	font-family: Ubuntu;
+	border-radius: 5px;
+	width: 95%;
+	margin: 1rem 1rem;
+	padding: 15px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	background-color: #fff;
+}
+
+.jobCard h5 {
+	font-family: Roboto;
+	font-weight: 500;
+}
+
+#deadline {
+	font-weight: 500;
+	font-size: smaller;
+	margin-bottom: 5px;
+}
+
+.jobModal .modal-dialog {
+	margin: 20px auto;
+	height: 94%;
+	width: 97%;
+	max-width: none;
+}
+
+.jobModal .modal-content {
+	height: 100%;
+}
+
+.jobModal .modal-body {
+	overflow-y: auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	justify-content: space-between;
+}
+
+.body1 {
+	padding: 2rem;
+	min-width: 30%;
+	/* overflow-y: auto; */
+	max-height: 100%;
+}
+
+.body2 {
+	border-left: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 1rem;
+	min-width: 70%;
+
+	/* overflow-y: auto; */
+	max-height: 100%;
+}
+
+.body2 h3,
+.modal-title {
+	font-family: Poppins;
+}
+
+.modal-body a {
+	color: rgba(0, 0, 0, 0.7);
+	text-decoration: none;
+}
+
+.modal-body a:hover {
+	color: blue;
+	opacity: 0.8;
+}
+
+.socLinks {
+	font-size: 25px;
+}
+
+@media only screen and (max-width: 800px) {
+	.body2 {
+		border-left: none;
+	}
+}
+
+.indiJobsPage {
+	background-color: #fff;
+	min-height: 100vh;
+	margin-top: -50px;
+	padding: 40px;
+	padding-top: 50px;
+	font-family: Ubuntu;
+}
+
+.indiJobsPage h3 {
+	font-family: Roboto;
+	font-weight: 700;
+}
+
+.indiJobsPage h5 {
+	font-family: Roboto;
+	font-weight: 500;
+}
+
+.indiJobsPage .socLinks a {
+	color: black;
+	opacity: 0.7;
+}
+
+.indiJobsPage .socLinks a:hover {
+	opacity: 1;
+}
+
+
+.calendarWrapper {
+	/* width: 25%; */
+	padding: 10px;
+	width: 100%;
+	border-radius: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	margin: 10px 0;
+}
+
+.head {
+	font-family: Roboto;
+	font-weight: 700;
+	padding: 0.5rem 2rem;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.home {
+	justify-content: space-between;
+}
+
+@media only screen and (max-width: 830px) {
+	.home {
+		justify-content: center;
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+	.jobsDiv {
+		width: 95vw;
+	}
+}
