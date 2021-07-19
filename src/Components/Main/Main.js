@@ -12,12 +12,13 @@ import Header from '../Header/Header';
 import JobComponent from '../Jobs/JobComponent';
 import NotificationsComponent from '../Notifications/NotificationsComponent';
 import CalendarComponent from '../Calendar/CalendarComponent';
+import Profile from '../Profile/Profile';
 
 //extra comp
 
 
 function PrivateRoute({ children, ...rest }) {
-    let isAuth = useSelector(state=>state.user.isAuth);
+    let isAuth = useSelector(state => state.user.isAuth);
     return (
         <Route
             {...rest}
@@ -39,7 +40,7 @@ function PrivateRoute({ children, ...rest }) {
 
 
 function Main(props) {
-    let isAuth = useSelector(state=>state.user.isAuth);
+    let isAuth = useSelector(state => state.user.isAuth);
     return (
         <>
             {
@@ -49,14 +50,17 @@ function Main(props) {
                 <Route path="/login" component={Login} />
                 <PrivateRoute exact path="/home"><Home /> </PrivateRoute>
                 <PrivateRoute exact path="/notifications">
-						<NotificationsComponent />
-					</PrivateRoute>
-					<PrivateRoute exact path="/calendar">
-						<CalendarComponent /> 
-					</PrivateRoute>
-					<PrivateRoute exact path="/jobs/:id">
-						<JobComponent />
-					</PrivateRoute>
+                    <NotificationsComponent />
+                </PrivateRoute>
+                <PrivateRoute exact path="/calendar">
+                    <CalendarComponent />
+                </PrivateRoute>
+                <PrivateRoute exact path="/profile">
+                    <Profile />
+                </PrivateRoute>
+                <PrivateRoute exact path="/jobs/:id">
+                    <JobComponent />
+                </PrivateRoute>
                 <Redirect to="/home" />
             </Switch>
         </>

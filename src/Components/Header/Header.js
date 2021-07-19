@@ -33,7 +33,9 @@ function Header(props) {
 						<NavItem>
 							<Link to="/calendar">CALENDAR</Link>
 						</NavItem>
-
+						<NavItem>
+							<Link to="/profile">PROFILE</Link>
+						</NavItem>
 						<NavItem>
 							<Link
                             to="/login"
